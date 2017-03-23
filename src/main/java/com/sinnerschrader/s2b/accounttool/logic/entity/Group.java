@@ -153,7 +153,7 @@ public interface Group extends Comparable<Group> {
 		ADMIN,
 		TEAM,
 		TECHNICAL,
-		UNKNOWN;
+		UNKNOWN
 	}
 
 	/**

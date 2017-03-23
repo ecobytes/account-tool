@@ -6,5 +6,5 @@ package com.sinnerschrader.s2b.accounttool.presentation.messaging;
 public enum GlobalMessageType {
 	INFO,
 	WARNING,
-	ERROR;
+	ERROR
 }

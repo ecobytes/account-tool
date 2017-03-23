@@ -15,14 +15,14 @@ import java.text.DecimalFormat;
 public class MemoryHealthIndicator extends AbstractHealthIndicator {
 
 	/**
+	 * Constant of required min free memory
+	 */
+	private static final long MIN_FREE_MEMORY = 15 * 1024 * 1024;
+
+	/**
 	 * Status for Low Memory
 	 */
 	private final Status LOW_MEM = new Status("LOW_MEMORY", "The free memory is very low.");
-
-	/**
-	 * Constant of required min free memory
-	 */
-	private final long MIN_FREE_MEMORY = 15 * 1024 * 1024;
 
 	@Override
 	protected void doHealthCheck(Health.Builder builder) throws Exception {

@@ -22,12 +22,6 @@ public class IsMemberOfFunction implements Function {
 
 	private static final String GROUP_PARAM_NAME = "groupCn";
 
-	private AuthorizationService authorizationService;
-
-	public IsMemberOfFunction(AuthorizationService authorizationService) {
-		this.authorizationService = authorizationService;
-	}
-
 	@Override
 	public List<String> getArgumentNames() {
 		return Collections.singletonList(GROUP_PARAM_NAME);

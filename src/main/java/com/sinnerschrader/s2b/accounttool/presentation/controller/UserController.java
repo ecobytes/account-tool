@@ -69,9 +69,8 @@ public class UserController {
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public ModelAndView view() {
 		authorizationService.ensureUserAdministration(RequestUtils.getCurrentUserDetails());
-
-		ModelAndView mav = new ModelAndView("pages/user/index.html");
-		return mav;
+		
+		return new ModelAndView("pages/user/index.html");
 	}
 
 	@RequestMapping(value = "/user/maintenance", method = RequestMethod.GET)
